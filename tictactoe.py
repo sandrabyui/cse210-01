@@ -1,3 +1,5 @@
+#A tictsctoe game by Sandra Aeleye
+
 #printing the game board
 #choose player input
 #checking for a win or a tie
@@ -106,16 +108,19 @@ def switch_player():
     else:
         current_Player = "x"
 
-while game_running:
-    printBoard (board)
-    playerinput(board)
-    check_win()
-    check_tie(board)
-    switch_player()
-    check_win()
-    check_tie(board)
-    
 
+def main():
+       while game_running:
+                printBoard (board)
+                playerinput(board)
+                check_win()
+                check_tie(board)
+                switch_player()
+                check_win()
+                check_tie(board)
+    
+       if __name__ == "__main__":
+         main()
 
 
 
